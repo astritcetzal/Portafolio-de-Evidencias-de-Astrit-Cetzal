@@ -10,6 +10,8 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
+    border-radius: 10px;
+    transition: all 0.3s ease;
 } 
  
 body { 
@@ -23,8 +25,11 @@ body {
 .container { 
     max-width: 1200px; 
     margin: 0 auto; 
-    border: 2px solid #663046; 
+    border: 2px solid black; 
     padding: 20px; 
+    background-color: #b481b4;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5),-2px -2px 5px rgba(255,255,255,0.3);
+    border-radius: 15px;
 }
 /* ==================== ENCABEZADOS ==================== */ 
 h1 { 
@@ -54,9 +59,10 @@ p {
 
 /* ==================== CONTROLES Y FORMULARIOS ==================== */ 
 .controls { 
-    border: 3px dotted black; 
+    border: 3px inset black; 
     padding: 20px; 
     margin-bottom: 20px; 
+    background-color:#ADD8E6; 
 } 
  
 .input-group { 
@@ -80,7 +86,7 @@ p {
  
 .input-group input:focus { 
     outline: none; 
-    border-color: green; 
+    border-color: rgb(116, 168, 116); 
 }
 /* ==================== BOTONES ==================== */ 
 button { 
@@ -127,21 +133,25 @@ margin-top: 15px;
 .preset-btn { 
 padding: 5px 10px; 
 border: 2px inset black; 
-background-color: #b2ebf2; 
+background-color: #c754c7; 
 cursor: pointer; 
 font-size: 12px; 
 font-weight: bold; 
 } 
 .preset-btn:hover { 
-background-color: green; 
-color: white; 
+background-color: rgb(9, 132, 165); 
+color: white;
+filter: brightness(1.3);
+transform: scale(1.35);
+box-shadow: 0 4px 6px rgba(6, 143, 161, 0.68);
 }
 
 /* ==================== RECTA NUMÉRICA ==================== */ 
 .number-line-container { 
-    border: 2px dotted black; 
+    border: 2px inset black; 
     padding: 20px; 
     margin-bottom: 20px; 
+    background-color:#ADD8E6; 
 } 
  
 .number-line-container h2 { 
@@ -246,13 +256,14 @@ color: white;
 .classification-panel, .points-panel, .distance-calculator { 
     border: 2px solid black; 
     padding: 15px; 
+    background-color:#ADD8E6; 
 } 
  
 .classification-panel h3, .points-panel h3, .distance-calculator h3 { 
     font-size: 16px; 
     margin-bottom: 15px; 
     color:blue; 
-    border-bottom: 2px dashed black; 
+    border-bottom: 2px double black; 
     padding-bottom: 5px; 
 } 
 
@@ -337,7 +348,7 @@ color: white;
 .calculator-description { 
     margin-bottom: 15px; 
     font-size: 13px; 
-    color: red; 
+    color: rgb(183, 0, 255); 
     text-align: left; 
 } 
  
@@ -429,7 +440,7 @@ color: white;
 .distance-result { 
     padding: 15px; 
     border: 2px solid rgb(151, 201, 221); 
-    background-color:  #ad58ad; 
+    background-color: #926f92; 
     font-size: 14px; 
     text-align: center; 
 } 
@@ -449,6 +460,17 @@ grid-template-columns: 1fr;
 } 
 } 
 
+footer {
+      text-align: center;  /* Centra el texto */
+      padding: 30px 20px;
+      background-color: #B39DDB;
+      color: white;
+    }
+
+    footer p {
+      margin: 8px 0;
+      font-size: 18px;
+    }
 
 </style>
 
@@ -610,7 +632,14 @@ onclick="calculateDistance()">
         </div> 
     </div> 
 </section> 
+<br>
+<footer> 
+<p>© Astrit Airan Cetzal Cetzal</p>
+<p>2025 • Tecnológico de software • Fundamentos de álgebra</p>
 
+  </footer>
+
+</br>
  </div> 
 <script src="script.js"></script>
 
