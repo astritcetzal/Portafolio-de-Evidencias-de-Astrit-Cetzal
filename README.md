@@ -2,7 +2,7 @@
 
 ## 👨‍💻 Información del Estudiante
 
-- **Nombre:** Astrit Airan Cetzal
+- **Nombre:** Astrit Airan Cetzal Cetzal
 - **Matrícula:** SW2509028
 - **Grupo:** C
 - **Cuatrimestre:** Primer Cuatrimestre
