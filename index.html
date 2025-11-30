@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio de Joaquin Uriona</title>
+
+<style>
+    /* ======= RESET Y AJUSTES CONTRA SCROLL LATERAL ======= */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden; 
+    }
+
+    body {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        background: linear-gradient(135deg, #ec00d9, #a380d1);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centra todo */
+    }
+
+    /* ======= CABECERA ======= */
+    header {
+        width: 100%;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        opacity: 0.7;
+    }
+
+    /* ======= GRID CENTRADA ======= */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px; 
+        padding: 40px 20px;
+        margin: auto;
+    }
+
+    /* ======= TARJETAS ======= */
+    .card {
+        position: relative;
+        background: #ad58ad;
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+        padding: 25px;
+        height: 180px;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.06) rotate3d(1, 1, 0, 6deg);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    }
+
+    .card h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .card p {
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
+
+    /* Luz decorativa */
+    .card::before {
+        content: "";
+        position: absolute;
+        top: -20%;
+        right: -20%;
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+        border-radius: 50%;
+        z-index: -1;
+        transition: 0.3s;
+    }
+
+    .card:hover::before {
+        transform: scale(1.6);
+        opacity: 0.2;
+    }
+
+    /* FOOTER */
+    footer{
+   
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 10px;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Portafolio de evidencias de Astrit Cetzal</h1>
+    <p>Fundamentos de Algebra</p>
+</header>
+
+<!-- ======= CONTENEDOR DE PROYECTOS ======= -->
+<div class="grid">
+
+    <a class="card" href="actividades/actividad02/index.html">
+        <h2>Visualizador de la Recta Numérica</h2>
+        <p>Descripción breve del proyecto.</p>
+    </a>
+
+    <a class="card" href="actividades/actividad04/index.html">
+        <h2>Calculadora de Conversiones de Números Complejos</h2>
+        <p>Descripción breve del proyecto.</p>
+    </a>
+
+    <a class="card" href="actividades/actividad06/index.html">
+        <h2>Calculadora de Expresiones</h2>
+        <p>Descripción breve del proyecto.</p>
+    </a>
+
+    <a class="card" href="actividades/actividad08/index.html">
+        <h2>Calculadora de Variables</h2>
+        <p>Descripción breve del proyecto.</p>
+    </a>
+
+    <a class="card" href="actividades/actividad10/index.html">
+        <h2>Calculadora de Productos Notables</h2>
+        <p>Descripción breve del proyecto.</p>
+    </a>
+
+    <a class="card" href="actividades/actividad12/index.html">
+        <h2>División Sintética de Polinomios</h2>
+        <p>Descripción breve del proyecto.</p>
+    </a>
+
+    <a class="card" href="actividades/actividad14/index.html">
+        <h2>Calculadora Simbólica de Ecuaciones</h2>
+        <p>Calculadora para despejar ecuaciones.</p>
+    </a>
+
+</div>
+
+<footer>Portafolio desarrollados por Astrit Cetzal <br>Tecnológico de Software </footer>
+
+</body>
+</html>
