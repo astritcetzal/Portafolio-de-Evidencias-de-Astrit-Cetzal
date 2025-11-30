@@ -1,0 +1,275 @@
+<!-- Estructura básica del documento HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Operaciones Algebraicas</title>
+<style>
+   
+
+    
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #C8A2C8; /*azul cielo */
+    color: #dbe9d2cc; /* verde */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    /* Añadir esto para que parezca un cuadro */
+    background-color: #b481b4;   /* Fondo blanco */
+    border: 2px solid #663046;      /* Borde gris oscuro */
+    border-radius: 10px;         /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+
+
+
+
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color:#630436; /* Rosado */
+    margin-bottom: 3rem;
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #2C041C; /* Rosado */
+    margin-bottom: 3rem;
+}
+
+/* Sección de inputs */
+.input-section {
+    margin-bottom: 2rem;
+}
+
+.field-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #aa0e15; /* Verde*/
+    margin-bottom: 0.5rem;
+}
+
+/* Campos de texto */
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    background-color: #ADD8E6;
+    border: 2px solid #470864; /* Azul */
+    border-radius: 8px;
+    color: #ffffff; /* Blanco */
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #131b03; 
+}
+
+textarea::placeholder {
+    color: #720909;
+}
+
+/* Botón de calcular */
+.calculate-button {
+    width: 100%;
+    padding: 1rem;
+    background-color:   #ad58ad; 
+    color: #000000; 
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calculate-button:hover {
+    background-color: rgb(192, 95, 128);
+    transform: translateY(-2px);
+}
+
+.calculate-button:active {
+    transform: translateY(0);
+}
+
+/* Sección de resultados */
+.result-section {
+    margin-top: 2rem;
+}
+
+.info-card {
+    background-color: #a76cc9;
+    border: 2px solid #541579;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.info-card h3 {
+    color: #b10f88; 
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.result-content {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #8efbff; 
+    background-color: #926f92;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #995a07; 
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    textarea {
+        min-height: 80px;
+        font-size: 0.9rem;
+    }
+}
+/* ==================== BOTÓN LIMPIAR ==================== */ 
+.clear-btn { 
+    background-color:   #ad58ad; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    margin-top: 20px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-weight: 500; 
+} 
+ 
+.clear-btn:hover { 
+    background-color: rgb(192, 95, 128); 
+    transform: translateY(-1px); 
+}
+
+ 
+footer {
+      text-align: center;  /* Centra el texto */
+      padding: 30px 20px;
+      background-color: #B39DDB;
+    }
+
+    footer p {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+
+ 
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+ 
+
+
+    <!-- Aquí irá el contenido -->
+
+<!-- Estructura básica del documento HTML -->
+<div class="container">
+        <h1>Calculadora de Variables</h1>
+        <h3>Astrit Airan Cetzal Cetzal | Grupo 1C | Tecnólogico de Software | Fundamentos de álgebra | Maestro: Jorge Javier Pedrozo Romero | 1° Cuatrimestre 2025 | </h3>
+
+        <div class="input-section">
+            <div class="field-group">
+                <label for="variables">Variables:</label>
+                <textarea id="variables" placeholder="Ejemplo: feature_cost, w1 = 1, w2 = 2, w3 = 3"></textarea>
+            </div>
+
+            <div class="field-group">
+                <label for="equations">Ecuaciones:</label>
+                <textarea id="equations" placeholder="Ejemplo: feature_cost = w1 * w2 + w3"></textarea>
+            </div>
+
+            <button id="calculate-btn" class="calculate-button">Calcular</button>
+        </div>
+
+        <div class="result-section">
+            <div class="info-card">
+                <h3>Resultado:</h3>
+                <div id="result" class="result-content">
+                    Ingresa las variables y ecuaciones para ver el resultado
+                </div>
+            </div>
+        </div>
+        <button class="clear-btn" onclick="clearAll()">Limpiar</button>
+        <br>
+<footer> 
+<p>© Astrit Airan Cetzal Cetzal</p>
+<p> Grupo 1C | Tecnólogico de Software | Fundamentos de álgebra | Maestro: Jorge Javier Pedrozo Romero | 1° Cuatrimestre 2025</p>
+
+  </footer>
+
+</br>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
