@@ -12,7 +12,7 @@
 ---
 ## 📋 Descripción del Proyecto
 
-Este repositorio es un portafolio de evidencias de todas las actividades practicas de HTML/CSS/JS realizadas a lo largo del curso.Este portafolio servirá como un proyecto que demuestre la funcionalidad, el diseño coherente y el historial de desarrollo de todas sus entregas.
+Este repositorio es un portafolio de evidencias de todas las actividades practicas de HTML/CSS/JS realizadas a lo largo del curso de **Fundamentos de álgebra**.Este portafolio servirá como un proyecto que demuestre la funcionalidad, el diseño coherente y el historial de desarrollo de todas mis entregas.
 
 ## 🎯 Objetivos Alcanzados
 
@@ -20,6 +20,42 @@ Este repositorio es un portafolio de evidencias de todas las actividades practic
 - ✅ Implementar estructuras condicionales
 - ✅ Utilizar bucles y funciones
 - ✅ Aplicar control de versiones con Git y GitHub
+- ✅ Aprender a darle estilo
+- ✅ Aprender la estructura para hacer una página con HTML
+
+---
+## 🚀 Instalación y Uso
+
+### Prerrequisitos
+- Node.js (versión 14 o superior)
+- Git
+
+### Clonar el repositorio
+```bash
+git clone https://github.com/TU-USUARIO/fundamentos-programacion-practica-1.git
+cd fundamentos-programacion-practica-1
+```
+
+### Instalar dependencias
+```bash
+npm install
+```
+
+### Ejecutar tests
+```bash
+npm test
+```
+
+### Ejecutar tests en modo watch
+```bash
+npm run test:watch
+```
+
+### Ver cobertura de código
+```bash
+npm run test:coverage
+```
+
 
 ---
 
@@ -60,6 +96,33 @@ index.html               <-- PÁGINA PRINCIPAL (Menú/Portafolio)
 
 ```
 
+
+---
+
+## 💡 Aprendizajes Clave
+
+### Lo que más me costó
+- **Archovos diferentes**: Al principio no sabia como separar el js del la pagina para ponerla en otro archivo, pero investigando aprendí. 
+
+### Lo que más me gustó
+- **Git Hub**: Aprender a usar Git hub y acerca de su imporatancia me parace bastante escencial para documentar nuestros códigos.
+
+
+---
+
+## 📚 Recursos Utilizados
+
+- [MDN Web Docs - JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [JavaScript.info](https://es.javascript.info/)
+- [Stack Overflow](https://stackoverflow.com)
+
+---
+
+## 🎯 Próximos Pasos
+
+Este proyecto me prepara para:
+- 📊 Creación de calculadoras científicas
+- Implementacion de HTML/CSS/JS
 
 ---
 
